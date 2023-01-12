@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/helper.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1>Hangman</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+
+            <div class="hangman"></div>
+
+            <div class="word"></div>
+
+            <div class="keyboard"></div>
+
+            <button id="restart">Recommencer</button>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            2023 &copy; MaximeBranger
+        </div>
+    </footer>
+
+    <script src="scripts/words.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

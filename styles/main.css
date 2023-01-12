@@ -1,0 +1,132 @@
+/* changa-regular - latin */
+@font-face {
+    font-family: 'Changa';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/changa-v20-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/changa-v20-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* changa-700 - latin */
+@font-face {
+    font-family: 'Changa';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/changa-v20-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/changa-v20-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* changa-800 - latin */
+@font-face {
+    font-family: 'Changa';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+        url('../fonts/changa-v20-latin-800.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/changa-v20-latin-800.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Changa';
+}
+
+.main-header {
+    background-color: #0b0033;
+    color: #eaf27c;
+}
+
+.container {
+    max-width: 30rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    padding-block: 1.5rem;
+}
+
+.hangman {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.word {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin-block: 3rem;
+}
+
+.letter {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.letter.valid {
+    color: #ce8964;
+    font-weight: bold;
+    border: 0;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.key {
+    width: 3rem;
+    height: 3rem;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3rem;
+    box-shadow: .1rem .1rem .1rem black;
+}
+
+.key.selected {
+    opacity: 0.4;
+    box-shadow: 0;
+}
+
+#restart {
+    margin-block-start: 3rem;
+    max-width: 15rem;
+    align-self: center;
+    border: 0;
+    background-color: transparent;
+    color: 0b0033;
+}
+
+.main-footer {
+    display: flex;
+    text-align: center;
+    padding-block: 1rem;
+    background-color: #0b0033;
+    color: #eaf27c;
+}
