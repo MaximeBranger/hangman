@@ -95,6 +95,7 @@ function restart() {
     keyboardDiv.innerHTML = "";
 
     isPlaying = true;
+    hangman = 0;
     initialize();
 }
 
