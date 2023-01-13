@@ -130,3 +130,32 @@ h1 {
     background-color: #0b0033;
     color: #eaf27c;
 }
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 50rem;
+    }
+
+    .hangman {
+        height: 20rem;
+    }
+
+    .word {
+        gap: 1rem;
+    }
+
+    .letter {
+        width: 4rem;
+        height: 4rem;
+        font-size: 3rem;
+    }
+
+    .keyboard {
+        gap: 1rem;
+    }
+
+    .key {
+        width: 4rem;
+        height: 4rem;
+    }
+}
