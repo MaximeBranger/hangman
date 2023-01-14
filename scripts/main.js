@@ -29,6 +29,7 @@ function initialize() {
     drawWord(word);
     drawKeyboard();
     hangmanDiv.style.backgroundImage = "url('images/hangman" + hangman + ".png')";
+    hangmanDiv.textContent = "";
 }
 
 function drawWord(word) {
@@ -82,10 +83,14 @@ function testLetter(letter) {
     }
 
     if ([...letterDivs].every(ld => ld.classList.contains("valid"))) {
+        hangmanDiv.textContent = "Yeah ! You saved Bobby";
+        hangmanDiv.style.color = "green";
         isPlaying = false;
     }
 
     if (hangman === 8) {
+        hangmanDiv.textContent = "Oh no ! Bobby is dead";
+        hangmanDiv.style.color = "red";
         isPlaying = false;
     }
 }
